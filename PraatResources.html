@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<link href="style.css" type="text/css" rel="stylesheet">
+
+<head>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <title>The Dussias BrainTracking Lab</title>
+  <meta content="width=device-width, initial-scale=1">
+</head>
+
+
+<header>
+
+  <a href="./index.html"> <img class = "headerimg" alt = "the lab banner image with logo" src="./images/bLabBanner.png"/> </a>
+
+  <hr/>
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="https://katconnell213.github.io/GiuliDussias/AboutMe.html">About Me</a>
+      </button>
+      <div class="dropdown-content">
+      </div> 
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="https://katconnell213.github.io/GiuliDussias/MyResearch.html">My Research</a>
+      </button>
+
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="https://katconnell213.github.io/GiuliDussias/Diversity.html">Diversity & Inclusion</a>
+      </button>
+      <div class="dropdown-content">
+      </div> 
+    </div>
+    
+    <div class="dropdown">
+      <button class="dropbtn">
+        <a href="https://katconnell213.github.io/GiuliDussias/MyTeaching.html">My Teaching</a>
+      </button>
+    </div>
+    
+    <div class="dropdown">
+      <button class="dropbtn ">
+        <a href="./index.html">My Lab</a>
+      </button>
+      <div class="dropdown-content">
+        <a href="./Facilities.html">Facilities</a>
+        <a href="./CurrentProjects.html">Current Projects</a>
+        <a href="./LabMembers.html">Lab Members</a>
+
+
+      </div> 
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn activepage">
+        <a href="./PIRE.html">PIRE</a>
+      </button>
+      <div class="dropdown-content">
+      </div> 
+    </div>
+  </div>
+
+<hr/>
+</header>
+
+
+<body>
+  
+<article>
+
+  <h1> Resources</h1>
+
+
+  <div class="containercollapsible" style = "height: fit-content; width: 100%;">
+    <!--Main Tab Undergrad -->
+      <button type="button" class="collapsible">Praat Training Materials </button>
+      <div class="contentteaching">
+  
+        <!--Sub Tab 1 -->
+        <button type="button" class="collapsible" style="text-align: left;">Praat Training Manual</button>
+        <div class="collapsecontent">
+          <h3>Description</h3>
+            <p>This manual is intended for someone who is just starting out with Praat. There are a lot of resources for learning Praat out there, but I have found that there aren’t as many resources for truly starting at 0, and many assume some prior knowledge. This manual was written to bring you from 0 to a starting point of being able to use those resources and was design with undergradute RAs in mind. </p>          
+          
+          <button class="downloadbtn"style="margin: 10px;">
+            <i class="fa fa-download"></i>
+            <a href="" target="_blank">Download Manual</a>
+            </button>
+            <button class="downloadbtn">
+              <i class="fa fa-download"></i>
+              <a href="./PraatResources/Praat_Manual_audiofiles.zip" target="_blank">Download Audio Files</a>
+              </button>
+                  <button class="downloadbtn"  style="margin: 10px;">
+                  <i class="fa fa-download"></i>
+                  <a href="./PraatResources/Excerpt_A_Course_In_Phonetics.pdf" target="_blank">Download Reading</a>
+                  </button>
+          </div>         
+        </div>
+    </div>   
+  </div>
+  
+
+
+</article>
+<br>
+
+<footer>
+  <hr/>
+  <div class = "main">
+    <div class="flextable" style = "width: 20%;">
+      <div class = "flexitemcenterfooter">
+        <a href = "./MyLab.html" target="_blank"><img src="./images/Web_Logo-Black.jpg" class = "logo" alt="Penn State lion logo" ></a>
+      </div>
+    </div>
+    <div class = "flextable"style = "width: 80%;">
+      <div class = "flexitemleft">
+        <p>Dr. Paola Giuli Dussias<br>
+        Department of Spanish, Italian, & Portuguese<br>
+        439 Burrowes Building<br>
+        University Park, Pa 16802</p>
+      </div>
+      <div class = "flexitemleft" id = "contact">
+        <p>Phone:&nbsp;(814) 865-4252  <br>
+        Fax: &nbsp;  &nbsp; (814) 863-7944 <br>
+        Email: &nbsp;pdussias at psu dot edu  </p>
+      </div>
+    </div>
+  </div>
+  <hr/>
+</footer>
+
+<br>
+
+</body>
+
+<script>
+
+
+
+
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active2");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = "1200px";
+      }
+    });
+  }
+  </script>
+  </script>
+
+</html>
