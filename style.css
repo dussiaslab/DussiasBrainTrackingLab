@@ -508,6 +508,8 @@ table{
   display:inline-flex;
   opacity: 1;
   background-color: white;
+  border: 8px solid transparent;
+
 
 }
 .webpiccontainer{
@@ -549,7 +551,7 @@ table{
 
 
 .webelement .webpic:hover {
-  border: 10px solid blue;
+  border: 8px solid royalblue;
   transition:all 500ms ease-out 250ms;
 }
 
