@@ -20,6 +20,10 @@ footer, header {
 
 }
 
+.center{
+  text-align: center;
+}
+
 .headerimg {
   display: block;
   border-radius: 15px;
@@ -85,7 +89,7 @@ footer, header {
 
 /* Add a red background color to navbar links on hover */
 .navbar .dropdown .dropdown-content a:hover {
-color: royalblue;
+color: #4169e1;
 font-weight: bold;
 }
 
@@ -473,6 +477,9 @@ table{
 .flexitem{
   background-color: transparent;
   display:inline-flex;
+  align-items: center;
+  justify-content:space-around;
+
 }
 
 
@@ -519,7 +526,6 @@ table{
   display:inline-flex;
   background-color: trans;
   border-radius: 15px;
-
 }
 
 .webpicsquare{
@@ -686,6 +692,91 @@ table{
                        "smallbottom1 smallbottom2 smallbottom3 smallbottom4";
 }
 
+
+
+
+/* <!-- Participate button formatting --> */
+.participatebutton {
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  margin:auto;
+  width: 20rem;
+  height: 20rem;
+  height:auto;
+  border-radius: 50%;
+  background-color: rgb(79, 119, 230);
+  transition-delay:.3s;
+
+}
+
+.colorcircle{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  box-shadow: 0px 8px 10px 0px #b1aeae;
+  
+}
+
+
+.colorcontainer{
+  width: 20rem;
+  height: 20rem;
+  margin: auto;
+  display:inline-flex;
+  background-color: trans;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+
+.colorcontainer .participatehero{
+  position: relative;
+  transform: translate(-50%, -50%);
+  top:70%;
+  left:-50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display:flex;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  padding:15px;
+  width: 20rem;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.participatehero p{
+  width: 20rem;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+.participatebutton a{
+  text-decoration: none;
+}
+
+
+.participatebutton:hover{
+  background-color: rgb(12, 66, 226)
+
+}
+
+
+/* <!-- Participate button formatting --> */
+
+
+.containercollage2 {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  display: grid;
+  grid-template-areas: "smalltop1 smallmid1  mediumtop mediumtop" 
+                       "smalltop2 smallmid2  mediumtop mediumtop" 
+                       "smallbottom1 smallbottom2 smallbottom3 smallbottom4";
+}
+
 .photo-1 {
   grid-area: largetop;
 }
@@ -713,6 +804,19 @@ table{
   grid-area: smallbottom4;
 }
 
+.photo-8 {
+  grid-area: mediumtop;
+}
+
+
+.photo-9 {
+  grid-area: smallmid1;
+}
+
+.photo-a {
+  grid-area: smallmid2;
+}
+
 .photo {
   background-color: white;
   padding: 15px;
@@ -723,10 +827,20 @@ table{
   max-height: 400px;
 }
 
+.medium {
+  width: 100%;
+  max-height: 300px;}
+
 .small {
   width: 100%;
   max-height: 200px;
 }
+
+.square{
+  max-width: 200px;
+}
+
+
 .large img{
   width: 100%;
   max-height: 400px;
@@ -736,6 +850,12 @@ table{
 .small img{
   width: 100%;
   max-height: 150px;
+  border-radius: 15px;
+}
+
+.medium img{
+  width: 100%;
+  max-height: 350px;
   border-radius: 15px;
 }
 
@@ -1154,6 +1274,153 @@ ul.tab li .a:focus, .active {
 .tabcontent2 p{
   text-indent:25px;
 }
+
+
+
+
+
+
+/* Flip Squares Code*/
+
+
+.squarecontainer {
+  display: block;
+  margin: auto;
+  width:100%;
+  min-height:800px;
+  
+  justify-content: center;
+  justify-items: center;
+}
+
+.flip-square {
+  width: 25rem;
+  height: 16.5rem;
+  border-radius: 15px;
+  perspective: 1000px;
+  display:inline-flex;
+}
+
+.flip-square-inner {
+  position: relative;
+  width: 25rem;
+  height: 16.5rem;
+  text-align: center;
+  border-radius: 15px;
+  transition: transform 0.8s 0.3s;
+  transform-style: preserve-3d;
+  margin: auto;
+  display:inline-flex;
+}
+
+.flip-square:hover .flip-square-inner {
+  transform: rotateY(180deg);
+  border-radius: 15px;
+  margin: auto;
+  display:inline-flex;
+}
+
+.flip-square a{
+  visibility: hidden;
+}
+
+
+.flip-square:hover a{
+  visibility: visible;
+}
+.contentsquare{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.flip-square-front, .flip-square-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  margin: auto;
+  display:inline-flex;
+  box-shadow: 5px 5px 10px -2px rgba(0,0,0,0.2);
+
+
+}
+
+.squaretext {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-40%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: wrap;
+  text-align: center;
+  width: 20rem;
+}
+
+
+.flip-square-front {
+  margin: auto;
+  display:inline-flex;
+}
+
+.flip-square-back {
+  background-color: rgb(179, 133, 197);
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  border-radius: 15px;
+  white-space: wrap;
+  text-align: center;
+  margin: auto;
+  display:inline-flex;
+  z-index: 10;
+}
+
+.squarepic{
+  border-radius: 15px;
+  width: 25rem;
+  height: 16.5rem;
+  opacity: 1;
+  margin: auto;
+  display:inline-flex;
+  box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.2);
+
+}
+
+.hero{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:rgb(255, 255, 255);
+  background-image: radial-gradient(ellipse, rgb(0, 0, 0), rgb(0, 0, 0),rgb(0, 0, 0), rgba(0, 0, 0, 0.5),rgba(255, 255, 255, 0.0),rgba(255, 255, 255, 0.0),rgba(255, 255, 255, 0.0));
+  padding:15px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: auto;
+  display:inline-flex;
+  text-align: center;
+}
+
+
+
+
+
+/* Flip Squares Code*/
+
+
+
+
+
+
+
+
+
+
 
 
 
