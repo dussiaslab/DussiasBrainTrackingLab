@@ -1387,7 +1387,6 @@ ul.tab li .a:focus, .active {
   margin: auto;
   display:inline-flex;
   box-shadow: 8px 8px 10px -2px rgba(0,0,0,0.2);
-
 }
 
 .hero{
@@ -1411,12 +1410,6 @@ ul.tab li .a:focus, .active {
 
 
 /* Flip Squares Code*/
-
-
-
-
-
-
 
 
 
@@ -1694,6 +1687,30 @@ ul.tab li .a:focus, .active {
     max-width: 300px;
     font-size: 1.2rem;
   }
+
+
+  .flip-square {
+    width: 10rem;
+    height: 10rem;
+  }
+  
+  .flip-square-inner {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .squaretext {
+    width: 9rem;
+    font-size: .7rem;
+  }
+  
+  
+  
+  .squarepic{
+    width: 10rem;
+    height: 10rem;
+  }
+
 }
 
 
@@ -1767,6 +1784,11 @@ ul.tab li .a:focus, .active {
   }
 
   .hero{
+    padding:10px;
+    font-size: .70rem;
+  }
+
+ {
     padding:10px;
     font-size: .70rem;
   }
